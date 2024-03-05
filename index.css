@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'outfit';
+    background: linear-gradient(#ffdad5,#fff7f9);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contract-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contract-left-tittle h2{
+    font-weight: 700;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.contract-left-tittle hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contract-input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contract-left textarea{
+    height: 144px;
+    padding: 15px; ;
+    border-radius: 15px;
+    border-radius: 20px;
+}
+.contract-input:focus{
+    border: 2px solid #ff994f;
+}
+.contract-input::placeholder{
+    color: #9a9a9a9a;
+}
+.contract-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
+.contract-left button img{
+    height: 15px;
+}
+.contract-right img{
+    width: 500px;
+}
+@media (max-width:800px) {
+    .contract-input{
+        width: 70vw;
+    }
+    .contract-right{
+        display: none;
+    }
+}
